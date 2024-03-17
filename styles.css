@@ -1,6 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -21,49 +23,150 @@ body {
     width: 64px;
 }
 
+.item-image {
+    border-radius: 5px;
+    border: 2px solid #3882F6;
+}
+
 ul {
     display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    gap: 10px;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .hero {
     display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.site-description {
+    font-size: 18px;
+    color: #E5E7EB
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8
 }
 
 .hero-image {
-    width: 20%;
+    max-height: 300px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
     padding: 10px 100px;
+    gap: 150px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .items {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.subquote {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: #1F2937
+}
+
+.quote-source {
+    align-self: flex-end;
+    margin: 5px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 120%;
 }
 
 .call-to-action {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3882F6;
+    gap: 100px;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.call-title {
+    font-weight: 800;
+    font-size: 110%;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.button-two {
+    border: 2px solid white;
 }
 
 .footer {
@@ -71,4 +174,7 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #1F2937;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
 }
